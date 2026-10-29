@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff7fa;
+  color: #333;
+}
+
+header {
+  background-color:  #7a3659;
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.header-content { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+header nav a { color: #fff; text-decoration: none; margin-left: 18px; font-size: .95rem; }
+header nav a:hover, header nav a.active { color: #f4b6cf; }
+.theme-toggle { margin-left: 14px; min-height: 36px; padding: 0 12px; border: 1px solid rgba(255,255,255,.55); border-radius: 5px; background: transparent; color: #fff; cursor: pointer; }
+.theme-toggle:hover { background: rgba(255,255,255,.12); }
+
+header h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.intro {
+  padding: 60px 20px;
+  background-color: #f3ccdc;
+  text-align: center;
+}
+
+.intro-text h2 {
+  font-size: 30px;
+  color: #71314f;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 18px;
+  color: #ffffff;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Mission and Values */
+.mission,
+.values {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.mission h2,
+.values h2 {
+  font-size: 28px;
+  color: #71314f;
+  margin-bottom: 20px;
+}
+
+.mission p,
+.values ul {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.values ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.values li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+
+.testimonials {
+  background-color: #ffffff;
+  padding: 50px 24px;
+  text-align: center;
+}
+
+.testimonials > h2 { color: #7a3659; margin: 0 0 30px; }
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.testimonial-item {
+  background: #7a3659;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(4, 61, 73, .15);
+  transition: transform 0.3s;
+}
+
+.testimonial-item:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-item p {
+  font-style: italic;
+  color: #f5f2f2;
+}
+
+.testimonial-item h4 {
+  margin-top: 15px;
+  color:#f4b6cf;
+}
+
+/* Rating Stars */
+.rating {
+  margin-top: 10px;
+}
+
+.star {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* Skincare Tips Section */
+.tips {
+  background-color: #7a3659;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tips h2 {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.tips ul {
+  list-style: none;
+  max-width: 800px;
+  margin: auto;
+  padding: 0;
+}
+
+.tips li {
+  font-size: 18px;
+  padding: 10px 0;
+  border-bottom: 1px dashed  #ffffff;
+  color: #fffefe;
+}
+
+.tips li:last-child {
+  border-bottom: none;
+}
+
+/* Footer */
+footer {
+  background-color: #b84f7d;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  color: #fff5f5;
+  border-top: 2px solid  #ffffff;
+  margin-top: 0;
+}
+
+body.dark-mode { background: #291923; color: #fff0f5; }
+body.dark-mode .intro { background: #593447; }
+body.dark-mode .intro-text h2 { color: #fff0f5; }
+body.dark-mode .intro-text p { color: #f5dce6; }
+body.dark-mode .testimonials { background: #321e29; }
+body.dark-mode .testimonials > h2 { color: #fff0f5; }
+body.dark-mode .testimonial-item { background: #593447; }
+body.dark-mode footer { background: #481f35; }
+
+@media (max-width: 600px) {
+  .header-content { flex-direction: column; gap: 12px; }
+  header nav a { margin: 0 7px; }
+  .intro, .tips { padding: 42px 20px; }
+}
+
+/* Palette matched to the blush-pink hero image. */
+body { background-color: #fff8f5; color: #573b39; }
+header, .tips { background-color: #7b5452; }
+header nav a:hover, header nav a.active, .testimonial-item h4 { color: #efb9ae; }
+.intro { background-color: #f4d4cc; }
+.intro-text h2, .testimonials > h2, .mission h2, .values h2 { color: #7b5452; }
+.testimonial-item { background: #8d625f; }
+footer { background-color: #b56f68; }
+body.dark-mode { background: #2d2020; color: #fff3ef; }
+body.dark-mode .intro, body.dark-mode .testimonial-item { background: #5b4542; }
+body.dark-mode .testimonials { background: #382828; }
+body.dark-mode footer { background: #503938; }
+

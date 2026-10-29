@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Glow Essence – Your Skin’s Best Friend</title>
-<link rel="stylesheet" href="Rigester.css"> 
-<script src="Rig-log.js"></script> 
+  <title>Skin Care | Sign Up</title>
+<link rel="stylesheet" href="css/Rigester.css"> 
+<script src="js/Rig-log.js"></script> 
 </head>
 <body>
   <div class="container">
-    <form class="register-box" onsubmit="return validateForm()">    <!-- عشان اتأكد ان البيانات اللي دخلتها صح-->
+    <form class="register-box" onsubmit="return validateForm()">
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
       <h2>Create Account</h2>
 
       <div class="social-buttons">
@@ -17,7 +18,6 @@
         <button type="button" class="facebook">Continue with Facebook</button>
       </div>
     
-       <!--required -> عشان مسيبش input فاضي-->
       <input type="text" placeholder="Enter your full name" required />
       <input type="email" placeholder="Enter your email" required />
       <input type="password" id="password" placeholder="Create a password" required />
@@ -32,5 +32,6 @@
       </p>
     </form>
   </div>
+  <script src="js/theme.js"></script>
 </body>
 </html>

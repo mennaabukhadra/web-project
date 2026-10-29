@@ -8,8 +8,8 @@
     body {
       font-family: Arial, sans-serif;
       padding: 30px;
-      background-color: #fdf4f4;
-      color: #043d49;
+      background-color: #fff7fa;
+      color: #7a3659;
     }
 
     .details-container {
@@ -22,7 +22,7 @@
     }
 
     h1 {
-      color: #1f7081;
+      color: #b84f7d;
     }
 
     p {
@@ -43,7 +43,7 @@
     }
 
     .product-details h1 {
-      color: #043d49;
+      color: #7a3659;
     }
 
     .product-details p {
@@ -52,12 +52,16 @@
     }
 
     .btn-add-to-cart {
-      display: inline-block;
-      padding: 12px 25px;
-      background-color: #1f7081;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 142px;
+      min-height: 44px;
+      padding: 0 20px;
+      background-color: #b84f7d;
       color: white;
       text-decoration: none;
-      border-radius: 30px;
+      border-radius: 6px;
       font-weight: bold;
       font-size: 1.1em;
       text-align: center;
@@ -67,7 +71,7 @@
     }
 
     .btn-add-to-cart:hover {
-      background-color: #0b7186; 
+      background-color: #96395f; 
       transform: translateY(-3px); 
     }
 
@@ -76,17 +80,21 @@
     }
 
     body {
-      background-color: rgba(138, 194, 210, 0.95); 
+      background-color: #96395f;
       font-family: Arial, sans-serif;
       padding: 20px;
     }
     .btn-add-to-favorites {
-  display: inline-block;
-  padding: 12px 25px;
-  background-color: #1f7081;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 142px;
+  min-height: 44px;
+  padding: 0 20px;
+  background-color: #b84f7d;
   color: white;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 6px;
   font-weight: bold;
   font-size: 1.1em;
   text-align: center;
@@ -96,7 +104,7 @@
 }
 
 .btn-add-to-favorites:hover {
-      background-color: #0b7186; 
+      background-color: #96395f; 
   transform: translateY(-3px); 
 }
 
@@ -104,10 +112,35 @@
   transform: translateY(2px); 
 }
 
+    .back-link {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: #7a3659;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .theme-toggle { margin-left: 12px; min-height: 36px; padding: 0 12px; border: 1px solid #7a3659; border-radius: 6px; background: transparent; color: #7a3659; cursor: pointer; }
+    body.dark-mode { background: #291923; }
+    body.dark-mode .product-details { color: #edf5f5; }
+    body.dark-mode .product-details h1 { color: #dff5f5; }
+    body.dark-mode .product-details p { color: #d2e0e1; }
+    body.dark-mode .back-link, body.dark-mode .theme-toggle { color: #dff5f5; border-color: #dff5f5; }
+
+    /* Palette matched to the blush-pink hero image. */
+    body { background-color: #fff8f5; color: #573b39; }
+    h1, .product-details h1, .back-link { color: #7b5452; }
+    .theme-toggle { border-color: #7b5452; color: #7b5452; }
+    .btn-add-to-cart, .btn-add-to-favorites { background-color: #b56f68; }
+    .btn-add-to-cart:hover, .btn-add-to-favorites:hover { background-color: #965852; }
+    body.dark-mode { background: #2d2020; }
+    body.dark-mode .product-details h1, body.dark-mode .back-link, body.dark-mode .theme-toggle { color: #fff3ef; border-color: #fff3ef; }
   </style>
 </head>
 <body>
     <div class="product-details">
+        <a class="back-link" href="product.html">&larr; Back to products</a>
+        <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
         <img id="productImage" src="" alt="Product Image" />
         <h1 id="productTitle"></h1>
         <p id="productDesc"></p>
@@ -134,7 +167,7 @@
         
         document.getElementById('productTitle').innerText = title;
         document.getElementById('productDesc').innerText = desc;
-        document.getElementById('productImage').src = image;  
+        document.getElementById('productImage').src = image && image.includes('/') ? image : `assets/images/products/${image}`;
         document.getElementById('productPrice').innerText = price;  
 
      
@@ -149,5 +182,6 @@
     alert('Added to favorites !');
 });
     </script>
+    <script src="js/theme.js"></script>
 </body>
 </html>

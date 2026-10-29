@@ -6,32 +6,34 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(photo/ph15.jpg) no-repeat center center ;
+  background: url('../assets/images/photo/ph15.jpg') no-repeat center center ;
   background-size: cover;
   display: flex;
-  justify-content:right;
+  justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
 .login-container {
 
-  background-color: rgba(119, 186, 205, 0.95);
+  background-color: rgba(247, 218, 229, 0.96);
     max-width: 400px;
   padding: 40px 30px;
   border-radius: 20px;
   box-shadow: 0 0 30px #fbfbfb;
   text-align: center;
- margin-right: 950px;
+  margin: 20px;
 }
 
 .login-container h2 {
-  color: #0f5766;
+  color: #7a3659;
   margin-bottom: 10px;
 }
 
+.theme-toggle { float: right; min-height: 36px; padding: 0 12px; border: 1px solid #7a3659; border-radius: 6px; background: transparent; color: #7a3659; cursor: pointer; }
+
 .login-container p {
-  color: #033641;
+  color: #5b2842;
   margin-bottom: 30px;
   font-size: 14px;
 }
@@ -43,7 +45,7 @@ form {
 form label {
   display: block;
   margin-bottom: 5px;
-  color: #033641;
+  color: #5b2842;
   font-size: 14px;
 }
 
@@ -68,16 +70,17 @@ form .forgot {
 }
 
 form .forgot:hover {
-  color: #00414f;
+  color: #96395f;
 }
 
 form button {
   width: 100%;
-  background-color: #0f5766;
+  background-color: #b84f7d;
   color: #fff;
   border: none;
-  padding: 14px;
-  border-radius: 30px;
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 6px;
   font-weight: bold;
   font-size: 15px;
   cursor: pointer;
@@ -85,7 +88,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #116183;
+  background-color: #96395f;
   color: #fff0f0;
 }
 
@@ -93,17 +96,17 @@ form button:hover {
   margin-top: 25px;
   font-size: 14px;
   text-align: center;
-  color: #043d49;
+  color: #7a3659;
 }
 
 .signup a {
-  color:#ffffff;
+  color:#a44770;
   text-decoration: none;
   font-weight: 500;
 }
 
 .signup a:hover {
-  color: #043d49;
+  color: #71314f;
 }
 
 .social-login {
@@ -143,3 +146,23 @@ form button:hover {
   margin-top: 10px;
   display:none ;
 }
+
+body.dark-mode { background-color: #291923; }
+body.dark-mode .login-container { background: #513044; box-shadow: 0 0 24px rgba(0,0,0,.35); }
+body.dark-mode .login-container h2, body.dark-mode .login-container p, body.dark-mode form label { color: #fff0f5; }
+body.dark-mode .theme-toggle { border-color: #fff0f5; color: #fff0f5; }
+
+@media (max-width: 500px) {
+  .login-container { width: calc(100% - 32px); padding: 32px 24px; }
+}
+
+/* Palette matched to the blush-pink hero image. */
+.login-container { background-color: rgba(255, 239, 233, .96); }
+.login-container h2, .login-container p, form label, .signup { color: #573b39; }
+.theme-toggle { border-color: #7b5452; color: #7b5452; }
+form input { background-color: #fff9f6; }
+form button { background-color: #b56f68; }
+form button:hover { background-color: #965852; }
+.signup a { color: #965852; }
+body.dark-mode { background-color: #2d2020; }
+body.dark-mode .login-container { background: #5b4542; }

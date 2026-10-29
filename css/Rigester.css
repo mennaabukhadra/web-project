@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('../assets/images/photo/ph15.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.container {
+    background-color: rgba(247, 218, 229, 0.96);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #ffffff;
+    width: 350px;
+    margin: 20px;
+}
+
+.register-box h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.theme-toggle { float: right; min-height: 36px; padding: 0 12px; border: 1px solid #a44770; border-radius: 6px; background: transparent; color: #a44770; cursor: pointer; }
+
+.social-buttons {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.social-buttons button {
+    flex: 1;
+    min-height: 42px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.google,
+.facebook {
+    background-color: #b84f7d;
+}
+
+.google:hover,
+.facebook:hover {
+    background-color: #96395f;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffeef4;
+}
+
+.register {
+    width: 100%;
+    min-height: 46px;
+    margin: 12px 0;
+    background-color: #b84f7d;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.register:hover {
+    background-color: #96395f;
+    color: #fff0f0;
+}
+
+.login-text {
+    color: #5b2842;
+    text-align: center;
+
+}
+
+.login-text a {
+    color: #a44770;
+    text-decoration: none;
+
+}
+
+.login-text:hover a {
+    color: #71314f;
+}
+.submit{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#error-message { min-height: 20px; margin: 0; color: #9b1c1c; text-align: center; font-size: .9rem; }
+
+body.dark-mode { background-color: #291923; }
+body.dark-mode .container { background: #513044; box-shadow: 0 0 24px rgba(0,0,0,.35); }
+
+@media (max-width: 450px) {
+    .container { width: calc(100% - 32px); padding: 30px 24px; }
+    .social-buttons { flex-direction: column; gap: 8px; }
+}
+
+/* Palette matched to the blush-pink hero image. */
+.container { background-color: rgba(255, 239, 233, .96); }
+.register-box h2, .login-text { color: #573b39; }
+.theme-toggle { border-color: #7b5452; color: #7b5452; }
+.google, .facebook, .register { background-color: #b56f68; }
+.google:hover, .facebook:hover, .register:hover { background-color: #965852; }
+input { background-color: #fff9f6; }
+.login-text a { color: #965852; }
+body.dark-mode { background-color: #2d2020; }
+body.dark-mode .container { background: #5b4542; }

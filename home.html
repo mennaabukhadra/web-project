@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Glow Essence – Your Skin’s Best Friend</title>
+  <title>Skin Care | Home</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 <body>
  
@@ -18,7 +18,7 @@
       </div>
       <nav class="nav-menu">
         
-            <a href="home.html">Home</a>
+            <a href="home.html" class="active">Home</a>
 
             <a href="product.html">Products</a>  <!-- دا هيفتح صفحة المنتجات -->
 
@@ -29,9 +29,9 @@
             <a href="login.html">Login</a>        <!-- دا هيفتح صفحة تسجيل الدخول -->
 
             <a href="Rigester.html">Sign Up</a>
+            <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
           </nav>
      
-      </nav>
       <div class="header-actions">
         <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
         <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
@@ -41,11 +41,11 @@
 
 
   <section class="hero">
-    <img src="photo/ph11.jpg" width="100%" height="100%" alt="Skincare Banner" />
+    <img src="assets/images/hero-skincare-pink.png" alt="Pink skincare products arranged on a table" />
     <div class="hero-text">
-      <h2>Your Skin care is important</h2>
-      <p>Discover skin care with our premium skin care products.</p>
-      <a href="product.html" class="btn-hero">Shop Now</a>
+      <h2>Simple care for everyday skin</h2>
+      <p>Browse our collection and find products that suit your routine.</p>
+      <a href="product.html" class="btn-hero">View Products</a>
    
     </div>
   </section>
@@ -54,21 +54,21 @@
   <footer>
     <div class="footer-container">
       <div class="footer-section">
-        <h3>About skin Care</h3>
-        <p>Your go-to destination for radiant, healthy skin. Our mission is to deliver premium skincare products that nourish and restore your natural glow.</p>
+        <h3>Skin Care</h3>
+        <p>A student web project focused on presenting a simple skincare product collection.</p>
       </div>
       <div class="footer-section">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="Contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h3>Contact Us</h3>
-        <p>Email: support@SkinCare.com</p>
-        <p>Phone: +1 234 567 890</p>
+        <p>Email: info@skincare.com</p>
+        <p>Phone: +20 100 000 0000</p>
         <div class="social-icons">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
@@ -77,8 +77,9 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 skin Care. All rights reserved.</p>
+      <p>© 2026 Skin Care. Student project.</p>
     </div>
   </footer>
+  <script src="js/theme.js"></script>
 </body>
 </html>

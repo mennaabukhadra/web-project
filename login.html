@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login – Glow Essence</title>
+  <title>Skin Care | Login</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="login.css">
-  <script src="Rig-log.js" defer></script>
+  <link rel="stylesheet" href="css/login.css">
+  <script src="js/Rig-log.js" defer></script>
 </head>
 <body>
   <div class="login-container">
-    <h2>Welcome To Glow Essence</h2>
+    <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    <h2>Welcome back</h2>
+    <p>Sign in to continue to Skin Care.</p>
 
     <form id="loginForm">
       <label for="username">Username</label>
@@ -20,12 +22,12 @@
       <input type="password" id="password" placeholder="Enter your password" required>
 
       <a href="#" class="forgot">Forgot your password?</a>
-      <button type="submit" > <a href="home.html">Login</a></button>
+      <button type="submit">Login</button>
   
       <p class="signup">Don't have an account? <a href="Rigester.html">Sign Up</a></p>
-      <button></button>
-      <p id="errorMessage" class="error-message">!!The email or password is incorrect</p>
+      <p id="errorMessage" class="error-message"></p>
     </form>
   </div>
+  <script src="js/theme.js"></script>
 </body>
 </html>

@@ -3,31 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us – Glow Essence</title>
-    <link rel="stylesheet" href="about.css" />
+    <title>Skin Care | About</title>
+    <link rel="stylesheet" href="css/about.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet">
   </head>
   <body>
     <header>
-      <h1>Skin Care</h1>
+      <div class="header-content">
+        <h1>Skin Care</h1>
+        <nav aria-label="Main navigation">
+          <a href="home.html">Home</a>
+          <a href="product.html">Products</a>
+          <a href="about.html" class="active">About</a>
+          <a href="Contact.html">Contact</a>
+          <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+        </nav>
+      </div>
     </header>
 
     <section class="intro">
       <div class="intro-text">
         <h2>Our Story</h2>
         <p>
-          At Skin Care, we believe that skincare is self-care. Our brand was
-          born out of a passion for healthy, radiant skin using safe, effective,
-          and natural ingredients. Every product is crafted with love and a deep
-          understanding of what your skin truly needs.
+          This website was created as a university project to practice building
+          a simple online product catalog. It brings together everyday skincare
+          items in one clean and easy-to-browse place.
         </p>
       </div>
     </section>
 
     <section class="testimonials">
-      <pre><h2>                                                             What Our Customers Say</h2></pre>
+      <h2>What Our Customers Say</h2>
       <div class="testimonial-grid">
 
         <div class="testimonial-item">
@@ -119,7 +127,8 @@
     </section>
 
     <footer>
-      <p>&copy; 2025 Skin Care. All rights reserved.</p>
+      <p>&copy; 2026 Skin Care. Student project.</p>
     </footer>
+    <script src="js/theme.js"></script>
   </body>
 </html>
